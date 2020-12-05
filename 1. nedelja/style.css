@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'GothamRegular';
+  src: url("fonts/Gotham-Book.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Book.woff2") format("woff2"), url("fonts/Gotham-Book.woff") format("woff"), url("fonts/Gotham-Book.ttf") format("truetype"), url("fonts/Gotham-Book.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'GothamExtraLight';
+  src: url("fonts/Gotham-ExtraLight.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Gotham-ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-ExtraLight.woff2") format("woff2"), url("fonts/Gotham-ExtraLight.woff") format("woff"), url("fonts/Gotham-ExtraLight.ttf") format("truetype"), url("fonts/Gotham-ExtraLight.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'GothamRegular';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+/*# sourceMappingURL=style.css.map */
