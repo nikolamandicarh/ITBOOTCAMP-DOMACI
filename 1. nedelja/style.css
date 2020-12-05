@@ -7,10 +7,10 @@
 }
 
 @font-face {
-  font-family: 'GothamExtraLight';
-  src: url("fonts/Gotham-ExtraLight.eot");
+  font-family: 'GothamBold';
+  src: url("fonts/Gotham-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("fonts/Gotham-ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-ExtraLight.woff2") format("woff2"), url("fonts/Gotham-ExtraLight.woff") format("woff"), url("fonts/Gotham-ExtraLight.ttf") format("truetype"), url("fonts/Gotham-ExtraLight.svg#svgFontName") format("svg");
+  src: url("fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Gotham-Bold.woff2") format("woff2"), url("fonts/Gotham-Bold.woff") format("woff"), url("fonts/Gotham-Bold.ttf") format("truetype"), url("fonts/Gotham-Bold.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 
@@ -19,12 +19,68 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'GothamRegular',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6cm;
+  color: #141414;
 }
 
-html, body {
-  font-family: 'GothamRegular';
-  font-size: 14px;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  font-family: 'GothamRegular',sans-serif;
+  font-size: 1rem;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.6cm;
+  color: #141414;
+  padding: 20px;
+  border: none;
+}
+
+.header :hover {
+  font-family: 'GothamRegular',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6cm;
+  color: #141414;
+  color: #8a8a8a;
+}
+
+#HOME {
+  font-family: 'GothamBold',sans-serif;
+  font-size: 1.2rem;
+  font-weight: 50;
+  line-height: 1.6cm;
+  color: #141414;
+  padding-right: 200px;
+  padding-left: 0px;
+}
+
+#follow {
+  font-family: 'GothamRegular',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6cm;
+  color: #141414;
+  font-size: 0.8rem;
+  padding-left: 200px;
+}
+
+.navicons {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  padding: 0px;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=style.css.map */

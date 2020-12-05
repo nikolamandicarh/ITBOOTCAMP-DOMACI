@@ -1,6 +1,8 @@
 $colormain: #141414;
 $colorhover: #8a8a8a;
 
+// fontovi
+
 @font-face {
     font-family: 'GothamRegular';
       src: url('fonts/Gotham-Book.eot'); /* IE9 Compat Modes */
@@ -12,20 +14,29 @@ $colorhover: #8a8a8a;
   }
 
 @font-face {
-    font-family: 'GothamExtraLight';
-      src: url('fonts/Gotham-ExtraLight.eot'); /* IE9 Compat Modes */
-      src: url('fonts/Gotham-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-          url('fonts/Gotham-ExtraLight.woff2') format('woff2'), /* Super Modern Browsers */
-          url('fonts/Gotham-ExtraLight.woff') format('woff'), /* Pretty Modern Browsers */
-          url('fonts/Gotham-ExtraLight.ttf')  format('truetype'), /* Safari, Android, iOS */
-          url('fonts/Gotham-ExtraLight.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'GothamBold';
+      src: url('fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+      src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('fonts/Gotham-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+          url('fonts/Gotham-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+          url('fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
   }
 
-@mixin txtStyle1 {
-    font-family: 'GothamRegular';
-    font-size: 14px;
+@mixin txtStyleBold {
+    font-family: 'GothamBold',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 50;
+    line-height: 1.6cm;
+    color: $colormain;
+}
+
+@mixin txtStyleRegular {
+    font-family: 'GothamRegular',sans-serif;
+    font-size: 1rem;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.6cm;
+    color: $colormain;
 }
 
 * {
@@ -33,7 +44,43 @@ $colorhover: #8a8a8a;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    @include txtStyleRegular;
 }
-html,body {
-    @include txtStyle1()
+
+// header
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    @include txtStyleRegular;
+    padding: 20px;
+    border: none;
+}
+
+.header :hover {
+    @include txtStyleRegular;
+    color: $colorhover;
+}
+
+#HOME {
+    @include txtStyleBold();
+    padding-right: 200px;
+    padding-left: 0px;
+}
+
+#follow{
+    @include txtStyleRegular;
+    font-size: 0.8rem;
+    padding-left: 200px;
+}
+
+.navicons {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    padding: 0px;
+    vertical-align: middle;
 }
