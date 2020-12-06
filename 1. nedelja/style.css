@@ -164,4 +164,115 @@ br {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
+
+/* Contact form */
+.container-contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  position: relative;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form-title {
+  display: block;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 49px;
+}
+
+.wrap-input {
+  width: 60%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.input {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border-radius: 30px;
+  font-size: 15px;
+  line-height: 3;
+}
+
+/*----------------------------------*/
+input.input {
+  height: 50px;
+  padding: 0 35px 0 35px;
+}
+
+textarea.input {
+  min-height: 160px;
+  padding: 19px 35px 0 35px;
+}
+
+/*--------------button--------------*/
+.container-contact-form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+}
+
+.contact-form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  min-width: 150px;
+  height: 62px;
+  background-color: transparent;
+  border-radius: 30px;
+  font-family: 'GothamBold',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6cm;
+  color: #141414;
+  text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  max-width: 100%;
+}
+
+#footer-message {
+  width: 100%;
+  font-family: 'GothamBold',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6cm;
+  color: #141414;
+}
 /*# sourceMappingURL=style.css.map */
