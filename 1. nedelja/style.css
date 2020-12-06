@@ -17,7 +17,7 @@
 * {
   -webkit-box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: auto;
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'GothamRegular',sans-serif;
@@ -25,45 +25,38 @@
   font-weight: 300;
   line-height: 1.6cm;
   color: #141414;
+  max-width: 1000px;
 }
 
+/* header */
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-  font-family: 'GothamRegular',sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.6cm;
-  color: #141414;
-  padding: 20px;
-  border: none;
-}
-
-.header :hover {
-  font-family: 'GothamRegular',sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.6cm;
-  color: #141414;
-  color: #8a8a8a;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 1;
 }
 
 #HOME {
   font-family: 'GothamBold',sans-serif;
-  font-size: 1.2rem;
-  font-weight: 50;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1.6cm;
   color: #141414;
-  padding-right: 200px;
-  padding-left: 0px;
+  float: left;
+}
+
+.headernav {
+  padding-left: 320px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.headernav :hover {
+  color: #8a8a8a;
+}
+
+.headersocial {
+  float: right;
 }
 
 #follow {
@@ -73,7 +66,7 @@
   line-height: 1.6cm;
   color: #141414;
   font-size: 0.8rem;
-  padding-left: 200px;
+  padding-left: 230px;
 }
 
 .navicons {
@@ -82,5 +75,93 @@
   margin-left: 10px;
   padding: 0px;
   vertical-align: middle;
+}
+
+/* about */
+#about {
+  overflow: hidden;
+  font-family: 'GothamRegular',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6cm;
+  color: #141414;
+  text-align: left;
+  margin-top: 100px;
+}
+
+#name {
+  font-family: 'GothamBold',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6cm;
+  color: #141414;
+  font-size: 4rem;
+}
+
+p {
+  line-height: 0.5cm;
+}
+
+.skills {
+  margin-top: 25px;
+}
+
+.skills li {
+  color: #8a8a8a;
+  line-height: 0.5cm;
+}
+
+br {
+  line-height: 0.5cm;
+}
+
+#nikola {
+  float: right;
+  position: static;
+  width: 500px;
+}
+
+/* projects */
+#section {
+  font-family: 'GothamBold',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6cm;
+  color: #141414;
+  margin-bottom: 0px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+}
+
+.flip-card-inner {
+  width: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 #8a8a8a;
+          box-shadow: 0 4px 8px 0 #8a8a8a;
+}
+
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 /*# sourceMappingURL=style.css.map */
